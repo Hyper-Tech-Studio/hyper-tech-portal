@@ -7,9 +7,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['"Geist Sans"', 'sans-serif'],
-                mono: ['"Geist Mono"', 'monospace'],
-                display: ['"Geist Sans"', 'sans-serif'],
+                sans: ['"Geist"', 'sans-serif'],
+                mono: ['"Geist"', 'monospace'],
+                display: ['"Geist"', 'sans-serif'],
             },
             animation: {
                 'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
