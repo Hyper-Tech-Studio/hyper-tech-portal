@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 const Navbar = () => {
     return (
@@ -22,8 +22,29 @@ const Navbar = () => {
                 </span>
             </div>
 
+            {/* Navigation Links */}
+            <div className="hidden md:flex items-center gap-6 text-sm font-medium">
+                <a
+                    href="#projects"
+                    className="text-slate-600 hover:text-emerald-600 transition-colors"
+                >
+                    Projects
+                </a>
+                <a
+                    href="#team"
+                    className="text-slate-600 hover:text-emerald-600 transition-colors"
+                >
+                    Team
+                </a>
+            </div>
+
             <div className="flex items-center gap-5 text-slate-500">
-                <a href="https://www.facebook.com/profile.php?id=61587131485642" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-600 transition-colors">
+                <a
+                    href="https://www.facebook.com/profile.php?id=61587131485642"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-emerald-600 transition-colors"
+                >
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"
@@ -36,7 +57,10 @@ const Navbar = () => {
                         <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
                     </svg>
                 </a>
-                <a href="https://github.com/Hyper-Tech-Studio" className="hover:text-white transition-colors">
+                <a
+                    href="https://github.com/Hyper-Tech-Studio"
+                    className="hover:text-white transition-colors"
+                >
                     <svg
                         viewBox="0 0 24 24"
                         fill="none"

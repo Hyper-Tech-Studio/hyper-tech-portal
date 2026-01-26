@@ -1,8 +1,8 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import TeamSection from './components/TeamSection';
-import Footer from './components/Footer';
+import Navbar from "./components/Navbar";
+import Hero from "./components/Hero";
+import ProjectsSection from "./components/ProjectsSection";
+import TeamSection from "./components/TeamSection";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -19,7 +19,7 @@ function App() {
             />
 
             {/* Subtle bottom gradient overlay for depth */}
-            <div className="fixed inset-0 z-0 pointer-events-none bg-gradient-to-t from-emerald-50/50 to-transparent" />
+            <div className="fixed inset-0 z-0 pointer-events-none bg-linear-to-t from-emerald-50/50 to-transparent" />
 
             {/* Premium Texture */}
             <div className="fixed inset-0 z-0 opacity-[0.03] pointer-events-none mix-blend-multiply bg-[url('https://grainy-gradients.vercel.app/noise.svg')]" />
@@ -28,12 +28,13 @@ function App() {
             <div className="relative z-10 w-full flex flex-col min-h-screen">
                 <Navbar />
                 <Hero />
+                <ProjectsSection />
                 <TeamSection />
-                <div className="flex-grow"></div>
+                <div className="grow"></div>
                 <Footer />
             </div>
         </div>
-    )
+    );
 }
 
 export default App;
