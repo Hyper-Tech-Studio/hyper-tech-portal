@@ -6,20 +6,23 @@ export default {
     ],
     theme: {
         extend: {
+            colors: {
+                // Dark Gravity Theme - Bright Text
+                gravity: {
+                    bg: '#030712',           // Near black
+                    surface: '#0f172a',      // Dark blue-gray
+                    'surface-light': '#1e293b',
+                    primary: '#818CF8',      // Bright Indigo
+                    accent: '#22D3EE',       // Bright Cyan
+                    text: '#FFFFFF',         // Pure white
+                    'text-muted': '#CBD5E1', // Light gray (brighter)
+                    border: '#334155',       // Visible border
+                },
+            },
             fontFamily: {
-                sans: ['"Geist"', 'sans-serif'],
-                mono: ['"Geist"', 'monospace'],
-                display: ['"Geist"', 'sans-serif'],
+                sans: ['"Inter"', 'sans-serif'],
+                display: ['"Space Grotesk"', 'sans-serif'],
             },
-            animation: {
-                'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-            },
-            keyframes: {
-                fadeInUp: {
-                    '0%': { opacity: '0', transform: 'translateY(20px)' },
-                    '100%': { opacity: '1', transform: 'translateY(0)' },
-                }
-            }
         },
     },
     plugins: [],
